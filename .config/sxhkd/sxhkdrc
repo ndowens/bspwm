@@ -79,6 +79,10 @@ super + {o,i}
 	bspc wm -h off; \
 	bspc node {older,newer} -f; \
 	bspc wm -h on
+	
+# Focus selected desktop
+super + {1-9,0}
+	bspc desktop --focus ^{1-9,10}
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
